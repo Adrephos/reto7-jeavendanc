@@ -68,13 +68,13 @@ Con `groupBy`, `max` y `min` se pueden sacar los valores máximos y mínimos de 
 Usando `agg` y `groupBy` se pueden hacer operaciones más complejas, por ejemplo sumar los valores de la columna `experience` agrupados por la columna `mobile`:
 ![](./images/group_by_4.png)
 
-Otra de las cosas que podemos hacer con Spark, es hacer uso de funciones ya sean las funciones típicas de python o funciones lambda:
+Otra de las cosas que podemos hacer con Spark, es hacer uso de funciones ya sean las funciones típicas de python o funciones lambda:  
 ![](./images/functions_and_lambda.png)
 
 Otro tipo de funciones que puede resultar utiles son las `User Defined Functions` de pandas que sirven para aplicar funciones a los datos de una columna:
 ![](./images/functions_udf.png)
 
-Para terminar podemos hacer `drop` de columnas que no necesitemos en el dataframe, como por ejemplo duplicados:
+Para terminar podemos hacer `drop` de columnas que no necesitemos en el dataframe, como por ejemplo duplicados:  
 ![](./images/drop.png)
 
 ### Subir datos a S3
