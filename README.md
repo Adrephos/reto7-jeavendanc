@@ -41,50 +41,40 @@ Podemos seleccionar solo las columnas `age` y `mobile` del dataset:
 Podemos hacer `describe` al dataset para ver las estadísticas de las columnas:
 ![](./images/describe_dataset.png)
 
-También se pueden usar tipos de datos de SQL para hacer consultas, se importan de
-la siguiente forma:
+También se pueden usar tipos de datos de SQL para hacer consultas, se importan de la siguiente forma:
 ![](./images/import_sql_types.png)
 
-Se pueden usar por ejemplo para crear columnas con este tipo de datos y haciendo `cast` a
-las columnas del dataframe:
+Se pueden usar por ejemplo para crear columnas con este tipo de datos y haciendo `cast` a las columnas del dataframe:
 ![](./images/sql_type_use.png)
 
-Al crear columnas podemos operar con los datos de las columnas del dataframe, por ejemplo
-sumando 10 a la columna `age` para crear una nueva columna `age_after_10_yrs`:
+Al crear columnas podemos operar con los datos de las columnas del dataframe, por ejemplo sumando 10 a la columna `age` para crear una nueva columna `age_after_10_yrs`:
 ![](./images/operate_column.png)
 
 Se pueden tambien hacer filtros en el dataframe, deacuerdo a una condición, por ejemplo:
 ![](./images/filters.png)
 
-Otra consulta util es el `distinct` para ver los valores únicos de una columna, también
-se puede hacer `count` para contar los valores únicos:
+Otra consulta util es el `distinct` para ver los valores únicos de una columna, también se puede hacer `count` para contar los valores únicos:  
 ![](./images/distinct_count.png)
 
-Se pueden hacer `groupBy` para agrupar los datos de una columna y hacer operaciones sobre
-ellos, por ejemplo contar cuantos celulares hay de cada marca:
+Se pueden hacer `groupBy` para agrupar los datos de una columna y hacer operaciones sobre ellos, por ejemplo contar cuantos celulares hay de cada marca:
 ![](./images/group_by_1.png)
 
-Con `groupBy` también se pueden hacer operaciones más complejas, por ejemplo sumar o sacar 
-un promedio a los valores de cada columna agrupados por la columna `mobile`:
+Con `groupBy` también se pueden hacer operaciones más complejas, por ejemplo sumar o sacar  un promedio a los valores de cada columna agrupados por la columna `mobile`:
 ![](./images/group_by_2.png)
 
 Con `groupBy`, `max` y `min` se pueden sacar los valores máximos y mínimos de una columna:
 ![](./images/group_by_3.png)
 
-Usando `agg` y `groupBy` se pueden hacer operaciones más complejas, por ejemplo sumar los valores de la
-columna `experience` agrupados por la columna `mobile`:
+Usando `agg` y `groupBy` se pueden hacer operaciones más complejas, por ejemplo sumar los valores de la columna `experience` agrupados por la columna `mobile`:
 ![](./images/group_by_4.png)
 
-Otra de las cosas que podemos hacer con Spark, es hacer uso de funciones ya sean las funciones típicas
-de python o funciones lambda:
+Otra de las cosas que podemos hacer con Spark, es hacer uso de funciones ya sean las funciones típicas de python o funciones lambda:
 ![](./images/functions_and_lambda.png)
 
-Otro tipo de funciones que puede resultar utiles son las `User Defined Functions` de pandas
-que sirven para aplicar funciones a los datos de una columna:
+Otro tipo de funciones que puede resultar utiles son las `User Defined Functions` de pandas que sirven para aplicar funciones a los datos de una columna:
 ![](./images/functions_udf.png)
 
-Para terminar podemos hacer `drop` de columnas que no necesitemos en el dataframe,
-como por ejemplo duplicados:
+Para terminar podemos hacer `drop` de columnas que no necesitemos en el dataframe, como por ejemplo duplicados:
 ![](./images/drop.png)
 
 ### Subir datos a S3
@@ -109,12 +99,10 @@ Primero ingresamos a Jupyter en EMR y creamos un nuevo notebook:
 ![](./images/jupyter_login.png)
 
 ### Configuración
-Primero importamos las librerías necesarias para trabajar con Spark,
-creamos la SparkSession, el SparkContext y leer el archivo `sample_data.csv` de S3:
+Primero importamos las librerías necesarias para trabajar con Spark, creamos la SparkSession, el SparkContext y leer el archivo `sample_data.csv` de S3:
 ![](./images/jupyter_setup.png)
 
-Verificamos que se haya cargado correctamente el archivo y que el dataframe
-se haya creado:
+Verificamos que se haya cargado correctamente el archivo y que el dataframe se haya creado:
 ![](./images/verify_jupyter.png)
 
 
